@@ -30,4 +30,26 @@ echo '<br><br>';
 
 
 
+/*
+ * Task 2
+ * Prasad D. Warnakulasuriya 
+ * https://PrasadOnline.com
+ */
+
+function reformat($text){
+	$vowels = array('a','e','i','o','u','A','E','I','O','U');
+	$cleaned = str_replace($vowels,"",$text);
+	$cleaned = strtolower($cleaned);
+	echo ucfirst($cleaned);
+}
+
+reformat("liMeSHArp DeveLoper TEST");
+
+echo '<br><br>';
+
+
+
+
+
+
 ?>
