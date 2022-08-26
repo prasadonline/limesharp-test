@@ -48,6 +48,39 @@ reformat("liMeSHArp DeveLoper TEST");
 echo '<br><br>';
 
 
+/*
+ * Task 3
+ * Prasad D. Warnakulasuriya 
+ * https://PrasadOnline.com
+ */
+
+function next_binary_number(array $numArr){
+	
+		$num = implode("", $numArr);	
+	    $l = strlen($num);
+ 
+
+    for ($i = $l - 1; $i >= 0; $i--){
+        if ($num[$i] == '0'){
+            $num[$i] = '1';
+            break;
+        }
+ 
+        else
+            $num[$i] = '0';
+    }
+ 
+
+    if ($i < 0)
+        $num = "1" . $num;
+ 
+	$splitted = str_split($num);
+	$comma_separated = implode(",", $splitted);
+    echo $comma_separated;
+	
+}
+
+next_binary_number([1,0]);
 
 
 
